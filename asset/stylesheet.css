@@ -10,9 +10,13 @@ html{
     width: 100%;
     height: 46px;
     background-color: black;
+    
 
 }
-#nav li:hover a{
+#nav >li{
+display: inline-block;
+}
+#nav >li:hover >a, #nav .subnav li:hover{
     background-color: #ccc;
     color: #000;
 }
@@ -28,14 +32,16 @@ html{
     
 }
 #nav li {
-  display: inline-block;
+    list-style-type: none;
   position: relative;
   
 }
 #nav .subnav a{
     color: black;
-    display: block;
+    
+    
 }
+
 #nav .subnav{
     background-color: white;
     position: absolute;
