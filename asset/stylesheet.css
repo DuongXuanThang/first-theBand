@@ -110,11 +110,13 @@ float: right    ;
     background-color: brown;
     cursor: pointer;
 }
-#slider{
+#slider .background-items{
    
-    background: url('asset/img/chicago.jpg') top center /cover no-repeat;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
     margin-top: 46px;
-    padding-top: 50%;
+    
     position: relative;
 }
 #slider .text-content{
