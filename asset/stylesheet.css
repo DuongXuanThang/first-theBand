@@ -111,9 +111,9 @@ float: right    ;
     cursor: pointer;
 }
 #slider .background-items{
-   
-    background-position: top;
-    background-repeat: no-repeat;
+   /* khong co background o day */
+    
+    
     width: 100%;
     margin-top: 46px;
     
