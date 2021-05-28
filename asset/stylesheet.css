@@ -13,7 +13,7 @@ html{
     
 
 }
-#nav >li{
+#nav >li {
 display: inline-block;
 }
 #nav >li:hover >a, #nav .subnav li:hover{
@@ -22,6 +22,7 @@ display: inline-block;
 }
 #nav >li> a{
     color: white;
+    text-transform: uppercase;
 }
 #nav li a{
     text-decoration: none;
@@ -32,23 +33,32 @@ display: inline-block;
     
 }
 #nav li {
-    list-style-type: none;
+    list-style-type: no ne;
   position: relative;
+  
   
 }
 #nav .subnav a{
     color: black;
+    padding: 0 12px;
+    line-height:38px ;    
     
-    
+}
+#nav li:hover .subnav{
+    display: block;
 }
 
 #nav .subnav{
+    min-width: 160px;
+    display: none;
     background-color: white;
     position: absolute;
-   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    top : 100%;
+    left: 0;
 }
 
 #slider{
     min-height: 500px;
-    background-color: #333;
+    background-color:#000;
 }
