@@ -10,8 +10,15 @@ html{
     width: 100%;
     height: 46px;
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     
 
+}
+#nav {
+    display: inline-block   ;
 }
 #nav >li {
 display: inline-block;
@@ -33,7 +40,7 @@ display: inline-block;
     
 }
 #nav li {
-    list-style-type: no ne;
+    list-style-type: none;
   position: relative;
   
   
@@ -42,6 +49,7 @@ display: inline-block;
     color: black;
     padding: 0 12px;
     line-height:38px ;    
+    
     
 }
 #nav li:hover .subnav{
@@ -57,8 +65,30 @@ display: inline-block;
     top : 100%;
     left: 0;
 }
+.nav-arrow{
+    font-size: 10px;
+}
+#header .search-btn{
+float: right    ;
 
+}
+#header .search-icon{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0 21px;
+}
+#header .search-btn:hover{
+    background-color: brown;
+    cursor: pointer;
+}
 #slider{
     min-height: 500px;
-    background-color:#000;
+    background-color:#333;
+    margin-top: 46px;
+    padding-top: 50%;
+}
+#content{
+    height: 1000px;
+    background-color: #333;
 }
