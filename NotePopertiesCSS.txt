@@ -1,0 +1,13 @@
+note:
+box-sizing: border-box :cố định kích thước box(ko co giãn box khi padding margin)   
+1. CACH CAN GIUA 1 ITEM TRONG 1 BOX:
+cách 1: -text-align : center;
+         line-hight = chiều cao của box chứa nó
+cách 2: display : flex (có thể căn giữa nhiều item)
+        align-items: center (căn giữa theo chiều cao)
+		justify- content: center(nhiều item liền nhu ra giữa)
+                          space-around các item cách đều nhau + 2 đầu cuối mép trắng
+						  space-betweem + các 2 đầu cuối sát mép
+         
+
+        margin : auto;
