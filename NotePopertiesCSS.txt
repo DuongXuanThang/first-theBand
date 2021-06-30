@@ -1,5 +1,40 @@
 note:
-box-sizing: border-box :cố định kích thước box(ko co giãn box khi padding margin)   
+CSS selector: 
+.name1.name2	:Chọn tất cả các thẻ có cả name1 và name2 được đặt trong cùng  1 class inline của nó
+.name1 .name2	:Chọn tất cả các thẻ có class=“name2” là con của một phần tử có class=“name1”
+element > element	div > p	Chọn tất cả thẻ p là con trực tiếp của thẻ div
+element + element	div + p	Chọn thẻ p đứng liền kề sau thẻ div
+element ~ element	div ~ p	Chọn tất cả thẻ p đứng sau thẻ div
+Reset CSS:
+* {
+    padding: 0;
+    margin: 0;
+} 
+Như đoạn mã CSS trên thì toàn bộ các thẻ HTML đều có padding và margin bằng 0. Mặc định thì một số thẻ như h1-h6, p, ul, ol, … 
+sẽ có padding hoặc margin mặc định gây ra những sai lệch trong giao diện ngoài ý muốn
+Độ ưu tiên trong CSS:
+Internal,External
+inline: 1000
+id:100
+class: 10
+tagname:1
+Psuedo class(lớp giả): element ::after,before
+root();
+hover();
+active();
+padding: a b c d (kim dong ho)
+a b c (tren traiphai duoi)
+
+
+box-sizing:
+border-box :cố định kích thước box(ko co giãn box khi padding margin)   
+
+Background:
+background-clip: đổ màu từ border hay padding ,content của box
+background-size:base  kích thước theo chiều ngang
+contain: lay size theo chiều ngang 
+cover: lay size theo
+linear-gadient(): dải chuyển màu  
 1. CACH CAN GIUA 1 ITEM TRONG 1 BOX:
 cách 1: -text-align : center;
          line-hight = chiều cao của box chứa nó
@@ -8,6 +43,14 @@ cách 2: display : flex (có thể căn giữa nhiều item)
 		justify- content: center(nhiều item liền nhu ra giữa)
                           space-around các item cách đều nhau + 2 đầu cuối mép trắng
 						  space-betweem + các 2 đầu cuối sát mép
-         
 
         margin : auto;
+Responsive:
+pc>= 1024px
+tablet >=740 => 1024
+mobile <740
+
+		
+		
+		
+		

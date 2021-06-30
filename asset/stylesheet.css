@@ -34,6 +34,10 @@ padding-right: 8px;
 .mt-16{
     margin-top: 16px !important;
 }
+
+/* responsive */
+
+/* responsive */
 #header{
     width: 100%;
     height: 46px;
@@ -43,12 +47,14 @@ padding-right: 8px;
     left: 0;
     right: 0;
     z-index: 1;
+    overflow: hidden;
     
 
 }
 #nav {
-    display: inline-block   ;
+    display: inline-block;
 }
+
 #nav >li {
 display: inline-block;
 }
@@ -97,19 +103,29 @@ display: inline-block;
 .nav-arrow{
     font-size: 10px;
 }
+#header .mobile-item,
 #header .search-btn{
-float: right    ;
-
+float: right ;
+padding: 0 21px;
 }
+#header .menu-icon,
 #header .search-icon{
     color: aliceblue;
     font-size: 20px;
     line-height: 46px;
     padding: 0 21px;
 }
+
 #header .search-btn:hover{
     background-color: brown;
     cursor: pointer;
+}
+#header .mobile-item :hover{
+   background-color: #ccc;
+
+}
+#header .mobile-item :hover .menu-icon{
+    color: #000;
 }
 #slider .background-items{
    /* khong co background o day */
@@ -145,6 +161,8 @@ max-width: 100%;
 padding: 64px 0;
 margin-left: auto;
 margin-right: auto;
+padding-left: 16px;
+padding-right: 16px;
 }
 #content .section-heading, #content .section-sub-heading {
 

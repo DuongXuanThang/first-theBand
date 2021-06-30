@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./asset/stylesheet.css">
+    <link rel="stylesheet" href="asset/style.css">
     <link rel="stylesheet" href="./asset/themify-icons/themify-icons.css">
     <title>The Band</title>
 </head>
@@ -36,7 +37,9 @@
                 <i class="search-icon ti-search"></i>
             </div>
             <!--End Search-->
-
+<div id="mobile-menu" class="mobile-item">
+    <i class="menu-icon ti-menu"></i>
+</div>
 
         </div>
         <id id="slider">
@@ -175,7 +178,26 @@
 <p class="Copyright">Powered by  <a href="#">XuanThang</a></p>
         </div>
     </div>
+<script>
+    var header = document.getElementById('header');
+    var mm = document.getElementById('mobile-menu');
+   mm.onclick = function(){
+       var isClose =header.clientHeight === 46;
+       if(isClose){
+           header.style.height = 'auto';
+       }else{
+        header.style.height = '46px';
+       }
+   }
 
+   var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+   for (var index = 0; index < menuItems.length; index++) {
+   var  menuItem = menuItems[index];
+   menuItem.onclick =  function(){
+    header.style.height = '46px';
+   }
+   }
+</script>
 </body>
 
 </html>
