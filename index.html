@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="asset/style.css">
     <link rel="stylesheet" href="./asset/themify-icons/themify-icons.css">
     <title>The Band</title>
+    <style>
+         
+#header.addLineHeight {
+        background-color: rgb(105, 109, 102);
+      
+        height: 46px;
+         transition: 3s; 
+      }
+
+    </style>
 </head>
 
 <body>
@@ -179,6 +189,15 @@
         </div>
     </div>
 <script>
+    const $ = document.querySelector.bind(document);
+      const $$ = document.querySelectorAll.bind(document);
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > $("#slider").offsetTop )  {
+          $("#header").classList.add("addLineHeight");
+        } else {
+          $("#header").classList.remove("addLineHeight");
+        }
+      });
     var header = document.getElementById('header');
     var mm = document.getElementById('mobile-menu');
    mm.onclick = function(){
