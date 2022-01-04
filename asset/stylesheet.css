@@ -61,6 +61,7 @@ display: inline-block;
 #nav >li:hover >a, #nav .subnav li:hover{
     background-color: #ccc;
     color: #000;
+    transition: all 1s ease;
 }
 #nav >li> a{
     color: white;
@@ -75,7 +76,7 @@ display: inline-block;
     
 }
 #nav li {
-    list-style-type: none;
+  list-style-type: none;
   position: relative;
   
   
@@ -83,12 +84,15 @@ display: inline-block;
 #nav .subnav a{
     color: black;
     padding: 0 12px;
-    line-height:38px ;    
+    line-height:38px ; 
+   
     
     
 }
 #nav li:hover .subnav{
     display: block;
+   
+   
 }
 
 #nav .subnav{
@@ -99,6 +103,7 @@ display: inline-block;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     top : 100%;
     left: 0;
+    
 }
 .nav-arrow{
     font-size: 10px;
